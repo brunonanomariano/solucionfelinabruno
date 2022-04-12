@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Servicios</title>
 </head>
 <body>
-    
+    <section id="grillaMaquetado">
+        <div id="infoEntrega">
+            <p>Entegas Gratis en 48hs | CABA y GBA </p>
+        </div>
+        <header id="header" class="azul_degradado">
+            <div id="logoHeader">
+                <img src="images/logoh.png" class="tamanio_logo">
+            </div>
+            <div id="tituloHeader">
+                <h1 class="titulo_encabezado">SOLUCION FELINA</h2>
+            </div>  
+        </header>
+        <nav id="barraNavegadora" class="bordes">
+            <ul class="menu azul_degradado">
+                <li><a class="fuente_menu" href="index.html">Home</a></li>
+                <li><a class="fuente_menu" href="nosotros.html">Quienes somos</a></li>
+                <li>
+                    <a class="fuente_menu" href="productos.html">Productos <span class="desplegable">▼</span></a>
+                    <ul class="submenu azul_degradado_invertido">
+                        <li><a class="fuente_menu" href="productos.html#listado_alimentos">Alimento Balanceado</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_piedritas">Piedritas Santarias</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_juguetes">Juguetes</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_rascadores">Rascadores y Estaciones de Juego</a></li>
+                    </ul>
+                </li>
+                <li><a class="fuente_menu" href="servicios.html">Servicios <span class="desplegable">▼</span></a>
+                    <ul class="submenu azul_degradado_invertido">
+                        <li><a class="fuente_menu" href="servicios.html#educacion">Educacion</a></li>
+                        <li><a class="fuente_menu" href="servicios.html#adopcion">Adopcion</a></li>
+                        <li><a class="fuente_menu" href="servicios.html#catsitter">Catsitter</a></li>
+                    </ul>
+                </li>
+                <li><a class="fuente_menu" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="servicios" class="cuerpo_pagina contenedor_principal">
+            <section class="servicio" id="educacion">
+                <h3 class="cambio_fondo servicio__titulo">EDUCACION</h3>
+                <div class="contenido_servicio contenido_educacion">
+                    <a href="form_educacion.html"><img class="imagen_educacion servicio__imagen" src="images/educando.jpg" alt="Adopcion" width="100%"></a>   
+                    <p class="servicio__descripcion">
+                        Si tu mascota presenta conductas agresivas con sus pares u otras personas contamos con los especialistas
+                        adecuados para corregir su comportamiento. Hace click <a href="form_educacion.htm¿">aqui</a> o en la imagen para contratar el servicio.
+                    </p>
+                </div>
+            </section>
+            <section class="servicio" id="adopcion">
+                <h3 class="cambio_fondo servicio__titulo">ADOPCION</h3>
+                <div class="contenido_servicio contenido_adopcion">
+                    <a href="form_adopcion.html"><img class="imagen_adopcion servicio__imagen" class="servicios__imagen" src="images/adoptando.jpg" alt="Adopcion" width="100%"></a>
+                    <p class="servicio__descripcion">
+                        ¿Buscando esa compañia ideal? Hace click <a href="form_adopcion.htm¿">aqui</a> o en la imagen para adoptar a tu proxima mascota.
+                    </p>
+                </div>
+            </section>
+            <section class="servicio" id="catsitter">
+                <h3 class="cambio_fondo servicio__titulo">CATSITTER</h3>
+                <div class="contenido_servicio contenido_catsitter">
+                    <a href="form_catsitter.html"><img class="imagen_catsitter servicio__imagen" src="images/catsitter.jpg" alt="Adopcion" width="100%"></a>
+                    <p class="servicio__descripcion">
+                        ¿Buscando quien cuide de tu mascota cuando no estas en casa?
+                        Hace click <a href="form_educacion.htm¿">aqui</a> o en la imagen para contratar el servicio de catsitter.
+                    </p>
+                </div>    
+            </section> 
+        </section>
+        
+        <div class="chat_whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="whatsapp" src="images/whatsapp.png"></a>
+        </div>
+
+        <footer id="pie" class="azul_degradado">
+            <div class="redes_sociales">
+                <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
+                <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
+            </div>
+            <div class="datos_contacto fuente_menu">
+                <p>Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires</p>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>
