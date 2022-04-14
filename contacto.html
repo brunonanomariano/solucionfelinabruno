@@ -1,92 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href=".\css\estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Contacto</title>
-</head>
-<body>
-    <section id="#grillaMaquetado">
-        <div id="infoEntrega">
-            <p>Entegas Gratis en 48hs | CABA y GBA </p>
+
+    <title>HOME</title>
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  
+    <header class="container-fluid azul_degradado text-black">
+        <div class="row">
+            <div class="col-md-12 text-center text-white h6 bg-primary fw-bolder">
+                Entregas Gratis en 48hs | CABA y GBA
+            </div>
         </div>
-        <header id="header" class="azul_degradado">
-            <div id="logoHeader">
-                <img src="images/logoh.png" class="tamanio_logo">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-end">
+                <img src="images/logohr.png" alt="logo" class="img-fluid">
             </div>
-            <div id="tituloHeader">
-                <h1 class="titulo_encabezado">SOLUCION FELINA</h2>
-            </div>  
-        </header>
-        <nav id="barraNavegadora" class="bordes">
-            <ul class="menu azul_degradado">
-                <li><a class="fuente_menu" href="index.html">Home</a></li>
-                <li><a class="fuente_menu" href="nosotros.html">Quienes somos</a></li>
-                <li>
-                    <a class="fuente_menu" href="productos.html">Productos <span class="desplegable">▼</span></a>
-                    <ul class="submenu azul_degradado_invertido">
-                        <li><a class="fuente_menu" href="productos.html#listado_alimentos">Alimento Balanceado</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_piedritas">Piedritas Santarias</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_juguetes">Juguetes</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_rascadores">Rascadores y Estaciones de Juego</a></li>
-                    </ul>
-                </li>
-                <li><a class="fuente_menu" href="servicios.html">Servicios <span class="desplegable">▼</span></a>
-                    <ul class="submenu azul_degradado_invertido">
-                        <li><a class="fuente_menu" href="servicios.html#educacion">Educacion</a></li>
-                        <li><a class="fuente_menu" href="servicios.html#adopcion">Adopcion</a></li>
-                        <li><a class="fuente_menu" href="servicios.html#catsitter">Catsitter</a></li>
-                    </ul>
-                </li>
-                <li><a class="fuente_menu" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <section id="contenidoContacto" class="bordes cuerpo_pagina contenedor_principal">
-            <form id="formulario_contacto" action="envio.php" method="post">
-                <fieldset class="form">
-                    <p>
-                        <label class="etiqueta" for="nombre_apellido">Nombre</label><br>
-                        <input class="datos" type="text" id="nombre_apellido" />
-                    </p>
-                    <p>
-                        <label class="etiqueta" for="correo_electronico">Correo Electronico</label><br>
-                        <input class="datos" type="email" id="correo_electronico" />
-                    </p>
-                    <p>
-                        <label class="etiqueta" for="telefono">Telefono</label><br>
-                        <input class="datos" type="text" name="telefono" />
-                    </p>
-                    <p>
-                        <label class="etiqueta" for="consulta">Consulta</label><br>
-                        <textarea class=consulta name="consulta" rows="20" cols="40" ></textarea>
-                    </p>
-                    <p>
-                        <input class="enviar" type="submit" value="Enviar">
-                    </p>
-                </fieldset>        
-            </form>
-            <article class="chat_whatsapp">
-                <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="whatsapp" src="images/whatsapp.png"></a>
-            </article>
-        </section>
-        <footer id="pie" class="azul_degradado">
-            <div class="redes_sociales">
-                <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
-                <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
+            <div class="col-md-3 d-flex justify-content-start align-items-end">
+                <h1 class="align-bottom">Solucion Felina</h1>
             </div>
-            <div class="datos_contacto fuente_menu">
-                <p>Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires</p>
+            <nav class="col-md-6 d-flex align-items-end">
+                <ul class="nav nav-pills fw-bolder">
+                    <li class="nav-item">
+                      <a class="nav-link text-black" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" aria-current="page" href="nosotros.html">QUIENES SOMOS</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false">PRODUCTOS</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-black" href="productos.html#alimentos">ALIMENTO BALANCEADO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#juguetes">JUGUETES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#snacks">SNACKS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#antiparasitarios">ANTIPARASITARIO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#transporte">TRANSPORTES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#comederos">COMEDEROS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#complementos">COMPLEMENTOS Y SUPLEMENTOS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#descaso">DESCANSO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#collares">COLLARES Y ARNESES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#maltas">MALTAS Y HIERBAS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#estimulantes">ESTIMULANTES</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="servicios.html" role="button" aria-expanded="false">SERVICIOS</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-black" href="servicios.html">EDUCACION</a></li>
+                          <li><a class="dropdown-item text-black" href="servicios.html">ADOPCION</a></li>
+                          <li><a class="dropdown-item text-black" href="servicios.html">CATSITTER</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black" href="contacto.html">CONTACTO</a>
+                    </li>
+                  </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <article class="chat_whatsapp">
+      <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="whatsapp" src="images/whatsapp.png"></a>
+    </article>
+
+    <section class="container">
+        <div class="row mt-5 mb-3">
+            <div class="col-md-12 tipografia_azul">
+                <h2 class="fw-bolder">Contacto</h2>
             </div>
-        </footer>
+        </div>
+        <div class="row">
+            <div class="col-md-4 tipografia_azul">
+                <p>Horario de Atención en el Showroom/Pick Up: Lunes a Viernes de 11 a 16 hs. Whatsapp: 1122334455</p>
+                <img src="images/telefono.PNG">
+                <p>011 5467-7890</p>
+                <img src="images/mail.PNG">
+                <p>contacto@solucionfelina.com</p>
+                <img src="images/ubicacion.PNG">
+                <p>Pio Diaz 650 - Saenz Peña, Buenos Aires (Showroom/Pick Up)</p>
+            </div>
+            <div class="col-md-8 tipografia_azul">
+                <div class="mb-3">
+                    <label for="nombreApellido" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="nombreApellido" placeholder="Nombre Apellido">
+                    <label for="correoElectronico" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="correoElectronico" placeholder="name@example.com">
+                    <label for="telefonoContacto" class="form-label">Telefono</label>
+                    <input type="email" class="form-control" id="telefonoContacto" placeholder="011 1234 5678">
+                </div>
+                <div class="mb-3">
+                    <label for="consultaContacto" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="consultaContacto" rows="15"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control botonEnviar" type="submit" value="Enviar">
+
+                </div>
+            </div>
+        </div>
     </section>
-</body>
+
+    <footer class="container-fluid azul_degradado text-black fw-bolder align-items-center">
+        <div class="row">
+          <div class="col-md-8 d-flex justify-content-end">
+            Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires
+          </div>
+          <div class="col-md-4">
+            <p>
+              <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
+              <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
+            </p>
+          </div>
+        </div>
+    </footer>
+  
+  </body>
 </html>

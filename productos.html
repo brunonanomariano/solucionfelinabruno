@@ -1,326 +1,457 @@
-<!--
-ENTREGABLE:
-ENTREGABLE:
-Estructura de la web en HTML: página principal (index.html) + cada una de las páginas necesarias
-dependiendo de cada proyecto y los enlaces entre sí.
-Estilo básico: añadir estilo utilizando las propiedades y valores CSS vistos hasta el momento.
-Flexbox no debe incluirse en esta entrega.
--->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href=".\css\estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Productos</title>
-</head>
-<body>
-    <section id="grillaMaquetado">
-        <div id="infoEntrega">
-            <p>Entegas Gratis en 48hs | CABA y GBA </p>
-        </div>
-        <header id="header" class="azul_degradado">
-            <div id="logoHeader">
-                <img src="images/logoh.png" class="tamanio_logo">
+
+    <title>PRODUCTOS</title>
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  
+    <header class="container-fluid azul_degradado text-black sticky-top">
+        <div class="row">
+            <div class="col-md-12 text-center text-white h6 bg-primary fw-bolder">
+                Entregas Gratis en 48hs | CABA y GBA
             </div>
-            <div id="tituloHeader">
-                <h1 class="titulo_encabezado">SOLUCION FELINA</h2>
-            </div>  
-        </header>
-        <nav id="barraNavegadora" class="bordes">
-            <ul class="menu azul_degradado">
-                <li><a class="fuente_menu" href="index.html">Home</a></li>
-                <li><a class="fuente_menu" href="nosotros.html">Quienes somos</a></li>
-                <li>
-                    <a class="fuente_menu" href="productos.html">Productos <span class="desplegable">▼</span></a>
-                    <ul class="submenu azul_degradado_invertido">
-                        <li><a class="fuente_menu" href="productos.html#listado_alimentos">Alimento Balanceado</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_piedritas">Piedritas Santarias</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_juguetes">Juguetes</a></li>
-                        <li><a class="fuente_menu" href="productos.html#listado_rascadores">Rascadores y Estaciones de Juego</a></li>
-                    </ul>
-                </li>
-                <li><a class="fuente_menu" href="servicios.html">Servicios <span class="desplegable">▼</span></a>
-                    <ul class="submenu azul_degradado_invertido">
-                        <li><a class="fuente_menu" href="servicios.html#educacion">Educacion</a></li>
-                        <li><a class="fuente_menu" href="servicios.html#adopcion">Adopcion</a></li>
-                        <li><a class="fuente_menu" href="servicios.html#catsitter">Catsitter</a></li>
-                    </ul>
-                </li>
-                <li><a class="fuente_menu" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <section id="productos" class="cuerpo_pagina contenedor_principal">
-            <article id="listado_alimentos" class="serpacion_articulos"> 
-                <h2 class="listado__titulo cambio_fondo">ALIMENTOS BALANCEADOS</h2>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/kitten.png">
-                    <h4 class="producto__titulo">KITTEN</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Kitten 36 1.5kg</p>
-                    <p class="producto__precio">$2.750</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/pelo-largo.png">
-                    <h4 class="producto__titulo">INDOOR LONG HAIR</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Long Hair 1.5kg</p>
-                    <p class="producto__precio">$2.420</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/indoor.png">
-                    <h4 class="producto__titulo">INDOOR 7+</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Indoor 7+ 1.5kg</p>
-                    <p class="producto__precio">$2.420</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/weigth-care.png">
-                    <h4 class="producto__titulo">WEIGTH CARE</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Weigth Care 1.5kg</p>
-                    <p class="producto__precio">$2.700</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/hair-ball.png">
-                    <h4 class="producto__titulo">HAIR BALL</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Hair Ball 1.5kg</p>
-                    <p class="producto__precio">$2.800</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/active.png">
-                    <h4 class="producto__titulo">ACTIVE 7+</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Active 7+ 1.5kg</p>
-                    <p class="producto__precio">$2.900</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/ageing-12.png">
-                    <h4 class="producto__titulo">AGEING 12</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Ageing 12+ 1.5kg</p>
-                    <p class="producto__precio">$2.300</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/sensory-taste.png">
-                    <h4 class="producto__titulo">SENSORY TASTE</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin Sensory Taste 1.5kg</p>
-                    <p class="producto__precio">$2.500</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/persian.png">
-                    <h4 class="producto__titulo">PERSIAN</h4>
-                    <p class="producto__descripcion">Alimento Royal Canin PERSIAN 1.5kg</p>
-                    <p class="producto__precio">$3.000</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>         
-            </article>
-            
-            <article id="listado_piedritas" class="serpacion_articulos">
-                <h2 class="listado__titulo cambio_fondo">PIEDRITAS SANITARIAS</h2>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/silica_gel.jpg">
-                    <h4 class="producto__titulo">SILICA GEL</h4>
-                    <p class="producto__descripcion">Silica Cancat Neutra 3.8Lts</p>
-                    <p class="producto__precio">$1.400</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/absorsol.jpg">
-                    <h4 class="producto__titulo">ABSORSOL</h4>
-                    <p class="producto__descripcion">Absorsol Premium 3.6kg</p>
-                    <p class="producto__precio">$350</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/stonecat.jpg">
-                    <h4 class="producto__titulo">STONECAT</h4>
-                    <p class="producto__descripcion">StoneCat Aglomerantes 8Kg</p>
-                    <p class="producto__precio">$900</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/poopypet.jpg">
-                    <h4 class="producto__titulo">POOPY PET</h4>
-                    <p class="producto__descripcion">POOPY PET 5kg</p>
-                    <p class="producto__precio">$400</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/discovery.jpg">
-                    <h4 class="producto__titulo">DISCOVERY</h4>
-                    <p class="producto__descripcion">Discovery Silica 3.8Lts</p>
-                    <p class="producto__precio">$1.120</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/city_cat.jpg">
-                    <h4 class="producto__titulo">CITY CAT </h4>
-                    <p class="producto__descripcion">City Cat Aglomerantes 4Kg</p>
-                    <p class="producto__precio">$550</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/nelsoni.jpg">
-                    <h4 class="producto__titulo">NELSONI</h4>
-                    <p class="producto__descripcion">Nelsoni Ranch 2Kg</p>
-                    <p class="producto__precio">$223</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>        
-            </article>
+        </div>
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-end">
+                <img src="images/logohr.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-md-3 d-flex justify-content-start align-items-end">
+                <h1 class="align-bottom">Solucion Felina</h1>
+            </div>
+            <nav class="col-md-6 d-flex align-items-end sticky-top">
+                <ul class="nav nav-pills fw-bolder">
+                    <li class="nav-item">
+                      <a class="nav-link text-black" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" aria-current="page" href="nosotros.html">QUIENES SOMOS</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false">PRODUCTOS</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-black" href="productos.html#alimentos">ALIMENTO BALANCEADO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#juguetes">JUGUETES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#snacks">SNACKS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#antiparasitarios">ANTIPARASITARIO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#transporte">TRANSPORTES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#comederos">COMEDEROS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#complementos">COMPLEMENTOS Y SUPLEMENTOS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#descaso">DESCANSO</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#collares">COLLARES Y ARNESES</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#maltas">MALTAS Y HIERBAS</a></li>
+                        <li><a class="dropdown-item text-black" href="productos.html#estimulantes">ESTIMULANTES</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="servicios.html" role="button" aria-expanded="false">SERVICIOS</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-black" href="servicios.html">EDUCACION</a></li>
+                          <li><a class="dropdown-item text-black" href="servicios.html">ADOPCION</a></li>
+                          <li><a class="dropdown-item text-black" href="servicios.html">CATSITTER</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black" href="contacto.html">CONTACTO</a>
+                    </li>
+                  </ul>
+            </nav>
+        </div>
 
-            <article id="listado_juguetes" class="serpacion_articulos">
-                <h2 class="listado__titulo cambio_fondo">JUGUETES</h2>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/tumbler.jpg">
-                    <h4 class="producto__titulo">TUMBLER RATON</h4>
-                    <p class="producto__descripcion">Juguete Interactivo Para Gato</p>
-                    <p class="producto__precio">$344</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/pelota_jaula.jpg">
-                    <h4 class="producto__titulo">PELOTA JAULA</h4>
-                    <p class="producto__descripcion">Raton En Jaula</p>
-                    <p class="producto__precio">$485</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/raton_cuerda.jpg">
-                    <h4 class="producto__titulo">RATON A CUERDA</h4>
-                    <p class="producto__descripcion">Raton Interactivo A Cuerda</p>
-                    <p class="producto__precio">$603</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/varita.jpg">
-                    <h4 class="producto__titulo">Varita Cascabel</h4>
-                    <p class="producto__descripcion">Raton En Caña Extensible</p>
-                    <p class="producto__precio">$287</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/ratita_cuerda.jpg">
-                    <h4 class="producto__titulo">RATA A CUERDA</h4>
-                    <p class="producto__descripcion">Rata a Cuerda Muy Divertido</p>
-                    <p class="producto__precio">$722</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/rata_gome.jpg">
-                    <h4 class="producto__titulo">RATA DE GOMA</h4>
-                    <p class="producto__descripcion">Rata De Goma Con Sonido x4</p>
-                    <p class="producto__precio">$299</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/torre_pelotas.jpg">
-                    <h4 class="producto__titulo">TORRE PELOTAS</h4>
-                    <p class="producto__descripcion">Torre Con Pelotas Interactiva 3 Niveles</p>
-                    <p class="producto__precio">$1.830</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/puntero.jpg">
-                    <h4 class="producto__titulo">PUNTERO listado_rascadores</h4>
-                    <p class="producto__descripcion">Puntero Laser Verde</p>
-                    <p class="producto__precio">$899</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/surtido.jpg">
-                    <h4 class="producto__titulo">SURTIDO</h4>
-                    <p class="producto__descripcion">Kit Surtido Juguetes Varios</p>
-                    <p class="producto__precio">$467</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>         
-            </article>
+    </header>
 
-            <article id="listado_rascadores">
-                <h2 class="listado__titulo cambio_fondo">RASCADORES Y ESTACIONES DE JUEGO</h2>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/tomaso.jpg">
-                    <h4 class="producto__titulo">TOMASO</h4>
-                    <p class="producto__descripcion">Rascador Gato Tomaso</p>
-                    <p class="producto__precio">$4.582</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/infinito.jpg">
-                    <h4 class="producto__titulo">INFINITO</h4>
-                    <p class="producto__descripcion">Rascador Afila Uñas Infinito</p>
-                    <p class="producto__precio">$2.300</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/1piso.jpg">
-                    <h4 class="producto__titulo">1 PISO</h4>
-                    <p class="producto__descripcion">Rascador De 1 Piso</p>
-                    <p class="producto__precio">$1.599</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/tunel.jpg">
-                    <h4 class="producto__titulo">TUNEL</h4>
-                    <p class="producto__descripcion">Tunel 4 Entradas</p>
-                    <p class="producto__precio">$4.020</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/esquinero.jpg">
-                    <h4 class="producto__titulo">ESQUINERO</h4>
-                    <p class="producto__descripcion">Esquinero Pared Con Cepillo</p>
-                    <p class="producto__precio">$550</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div> 
-                <div class="producto">
-                    <img class="producto__imagen" src="images/post.jpg">
-                    <h4 class="producto__titulo">POSTE</h4>
-                    <p class="producto__descripcion">Poste Zootec</p>
-                    <p class="producto__precio">$2.365</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/trepador.jpg">
-                    <h4 class="producto__titulo">ESQUINERO TREPADOR</h4>
-                    <p class="producto__descripcion">Esquinero Trepador Pared</p>
-                    <p class="producto__precio">$1.600</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="images/torre.jpg">
-                    <h4 class="producto__titulo">TORRE</h4>
-                    <p class="producto__descripcion">Torre 3 Pisos</p>
-                    <p class="producto__precio">$25.000</p>
-                    <button class="producto__boton">COMPRAR</button>
-                </div>        
-            </article>  
-        </section>
+    <article class="chat_whatsapp">
+      <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="whatsapp" src="images/whatsapp.png"></a>
+    </article>
+
+    <section id="alimentos" class="container">
+      <div class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">ALIMENTOS</h2>
+      </div>
+      
+      <div class="row d-flex justify-content-center">
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/indoor.png" class="card-img-top img-fluid" alt="indoor">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">INDOOR 7</h5>
+            <p class="card-text text-center">Alimento Royal Canin Indoor 7+ 1.5kg.</p>
+            <p class="card-text fw-bolder h4 text-center">$2.420</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/kitten.png" class="card-img-top img-fluid" alt="kiten">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">KITTEN</h5>
+            <p class="card-text text-center">Alimento Royal Canin Kitten 36 1.5kg.</p>
+            <p class="card-text fw-bolder h4 text-center">$2.750</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/pelo-largo.png" class="card-img-top img-fluid" alt="peloLargo">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">INDOOR LONG HAIR</h5>
+            <p class="card-text text-center">Alimento Royal Canin Long Hair 1.5kg.</p>
+            <p class="card-text fw-bolder h4 text-center">$2.420</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/weigth-care.png" class="card-img-top img-fluid" alt="weigth care">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">WEIGTH CARE</h5>
+            <p class="card-text text-center">Alimento Royal Canin Weigth Care 1.5kg.</p>
+            <p class="card-text fw-bolder h4 text-center">$2.700</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="peluqueria" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">PELUQUERIA</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/shampoopelolargo.jpg" class="card-img-top img-fluid" alt="shampoopelolargo">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">SUMSU</h5>
+            <p class="card-text text-center">Shampoo para pelos largos.</p>
+            <p class="card-text fw-bolder h4 text-center">$1.048</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/shampoopelocorto.jpg" class="card-img-top img-fluid" alt="shampoopelocorto">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">SUMSU</h5>
+            <p class="card-text text-center">Shampoo para pelos cortos.</p>
+            <p class="card-text fw-bolder h4 text-center">$1.048</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/mascarilla.jpg" class="card-img-top img-fluid" alt="mascarilla">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">SUMSU</h5>
+            <p class="card-text text-center">Mascarilla para gatos.</p>
+            <p class="card-text fw-bolder h4 text-center">$780</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/toallitasgatos.jpg" class="card-img-top img-fluid" alt="toallitasgatos">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">STAVNET</h5>
+            <p class="card-text text-center">Toallitas Lisas 40 unidades.</p>
+            <p class="card-text fw-bolder h4 text-center">$900</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="juguetes" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">JUGUETES</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/ratones.jpg" class="card-img-top img-fluid" alt="ratones">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">KERBEL</h5>
+            <p class="card-text text-center">Raton de piel x4 5cm.</p>
+            <p class="card-text fw-bolder h4 text-center">$269</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/ratones2.jpg" class="card-img-top img-fluid" alt="ratones2">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">TRIXIE</h5>
+            <p class="card-text text-center">Ratones de peluche.</p>
+            <p class="card-text fw-bolder h4 text-center">$404</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/ratonespapel.jpg" class="card-img-top img-fluid" alt="ratonespapel">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">PAWISE</h5>
+            <p class="card-text text-center">Ratones de papel.</p>
+            <p class="card-text fw-bolder h4 text-center">$134</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="snacks" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">SNACKS</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/snack2.jpg" class="card-img-top img-fluid" alt="snack2">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">VITAKRAFT</h5>
+            <p class="card-text text-center">Milky Moments 7.</p>
+            <p class="card-text fw-bolder h4 text-center">$200</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="images/snack3.jpg" class="card-img-top img-fluid" alt="snack3">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">VITAKRAFT</h5>
+            <p class="card-text text-center">Milky moments queso 7 barritas.</p>
+            <p class="card-text fw-bolder h4 text-center">$300</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="antiparasitarios" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">ANTIPARASITARIOS</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/anti1.jpg" class="card-img-top img-fluid" alt="anti1">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">SHOO!TAG</h5>
+            <p class="card-text text-center">Antiparasitario para garrapatas.</p>
+            <p class="card-text fw-bolder h4 text-center">$2.700</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/anti2.jpg" class="card-img-top img-fluid" alt="anti2">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">SHOO!TAG</h5>
+            <p class="card-text text-center">Antiparasitario para pulgas</p>
+            <p class="card-text fw-bolder h4 text-center">$2.700</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/anti3.jpg" class="card-img-top img-fluid" alt="anti3">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">SHOO!TAG</h5>
+            <p class="card-text text-center">Antiparasitario para pulgas y garrapatas.</p>
+            <p class="card-text fw-bolder h4 text-center">$4.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="transporte" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">TRANSPORTE Y VIAJE</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/transporte1.jpeg" class="card-img-top img-fluid" alt="transporte1">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">DOGGIT</h5>
+            <p class="card-text text-center">Transportin Explorer.</p>
+            <p class="card-text fw-bolder h4 text-center">$5.400</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/transporte2.jpeg" class="card-img-top img-fluid" alt="transporte2">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">DOGGIT</h5>
+            <p class="card-text text-center">Transportin cabrio</p>
+            <p class="card-text fw-bolder h4 text-center">$10.700</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/transporte3.jpeg" class="card-img-top img-fluid" alt="transporte3">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">ARQUIVET</h5>
+            <p class="card-text text-center">Bolso de viaje plegable.</p>
+            <p class="card-text fw-bolder h4 text-center">$3.800</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="comederos" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">COMEDEROS Y BEBEDEROS</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/comedero1.jpeg" class="card-img-top img-fluid" alt="comedero1">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">NAYECO</h5>
+            <p class="card-text text-center">Comedero inoxidable.</p>
+            <p class="card-text fw-bolder h4 text-center">$500</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/comedero2.jpeg" class="card-img-top img-fluid" alt="comedero2">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">NAYECO</h5>
+            <p class="card-text text-center">Comedero inoxidable baltic</p>
+            <p class="card-text fw-bolder h4 text-center">$700</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/comedero3.jpeg" class="card-img-top img-fluid" alt="comedero3">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">GAUN</h5>
+            <p class="card-text text-center">Comedero inoxidable 15cm.</p>
+            <p class="card-text fw-bolder h4 text-center">$300</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/bebedero.jpeg" class="card-img-top img-fluid" alt="bebedero">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">CATIT</h5>
+            <p class="card-text text-center">Fuente de agua.</p>
+            <p class="card-text fw-bolder h4 text-center">$7.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
         
-        <div class="chat_whatsapp">
-            <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="whatsapp" src="images/whatsapp.png"></a>
-        </div>
+      </div>
 
-        <footer id="pie" class="azul_degradado">
-            <div class="redes_sociales">
-                <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
-                <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
-            </div>
-            <div class="datos_contacto fuente_menu">
-                <p>Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires</p>
-            </div>
-        </footer>
+
+
+
+      <div id="complementos" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">COMPLEMENTOS Y SUPLEMENTOS</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/inmune.jpg" class="card-img-top img-fluid" alt="inmune">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">BIOIBERICA</h5>
+            <p class="card-text text-center">Impromune para reforzar sistema inmunitario.</p>
+            <p class="card-text fw-bolder h4 text-center">$3.500</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <div id="descanso" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">DESCANSO</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/iglu.jpg" class="card-img-top img-fluid" alt="iglu">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">YAGU</h5>
+            <p class="card-text text-center">Iglu de espuma.</p>
+            <p class="card-text fw-bolder h4 text-center">$7.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/hamacafelpa.jpg" class="card-img-top img-fluid" alt="hamacafelpa">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">DUVO+</h5>
+            <p class="card-text text-center">Hamaca de felpa</p>
+            <p class="card-text fw-bolder h4 text-center">$3.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/hamacaradiador.png" class="card-img-top img-fluid" alt="hamacaradiador">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bolder">DUVO+</h5>
+            <p class="card-text text-center">Hamaca radiadora.</p>
+            <p class="card-text fw-bolder h4 text-center">$4.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="collares" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">COLLARES CORREAS Y ARNESES</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/arnes.jpg" class="card-img-top img-fluid" alt="arnes">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">ARNES</h5>
+            <p class="card-text text-center">Arnes para gatos.</p>
+            <p class="card-text fw-bolder h4 text-center">$1.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="maltas" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">MALTA Y HIERBAS</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/hierba.jpg" class="card-img-top img-fluid" alt="hierba">
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">TRIXIE</h5>
+            <p class="card-text text-center">Hierba para gatos.</p>
+            <p class="card-text fw-bolder h4 text-center">$1.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="estimulantes" class="row mt-4">
+        <h2 class="borde_redondeado d-flex justify-content-center azul_degradado text-white">ESTIMULANTES</h2>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="card m-4" style="width: 18rem;">
+          <img src="images/calmante.jpeg" class="card-img-top img-fluid" alt="calmante>
+          <div class="card-body">
+            <h5 class="card-titles text-center fw-bolder">BEAPHAR</h5>
+            <p class="card-text text-center">Calmante antiestress.</p>
+            <p class="card-text fw-bolder h4 text-center">$1.000</p>
+            <a href="#" class="btn btn-primary fw-bolder d-flex justify-content-center">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
     </section>
-</body>
+
+    <footer class="container-fluid azul_degradado text-black fw-bolder align-items-center">
+        <div class="row">
+          <div class="col-md-8 d-flex justify-content-end">
+            Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires
+          </div>
+          <div class="col-md-4">
+            <p>
+              <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
+              <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
+            </p>
+          </div>
+        </div>
+    </footer>
+  
+  </body>
 </html>
