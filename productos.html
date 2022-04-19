@@ -1,0 +1,539 @@
+<!--
+ENTREGABLE:
+ENTREGABLE:
+Estructura de la web en HTML: página principal (index.html) + cada una de las páginas necesarias
+dependiendo de cada proyecto y los enlaces entre sí.
+Estilo básico: añadir estilo utilizando las propiedades y valores CSS vistos hasta el momento.
+Flexbox no debe incluirse en esta entrega.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Productos</title>
+</head>
+<body>
+    <section id="maquetadoUnContenido">
+        <div id="infoEntrega">
+            <p>Entegas Gratis en 48hs | CABA y GBA </p>
+        </div>
+        <header id="header" class="azul_degradado">
+            <div id="logoHeader">
+                <img src="images/logoh.png" class="tamanio_logo">
+            </div>
+            <div id="tituloHeader">
+                <h1 class="titulo_encabezado">SOLUCION FELINA</h2>
+            </div>  
+        </header>
+        <nav id="barraNavegadora" class="bordes">
+            <ul class="menu azul_degradado">
+                <li><a class="fuente_menu" href="index.html">Home</a></li>
+                <li><a class="fuente_menu" href="nosotros.html">Quienes somos</a></li>
+                <li>
+                    <a class="fuente_menu" href="productos.html">Productos <span class="desplegable">▼</span></a>
+                    <ul class="submenu azul_degradado_invertido">
+                        <li><a class="fuente_menu" href="productos.html#listado_alimentos">Alimento Balanceado</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_peluqueria">Peluqueria e Higiene</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_piedritas">Piedritas Santarias</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_juguetes">Juguetes</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_snacks">Snacks</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_antiparasitarios">Antiparasitarios</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_transporte">Transporte y Viaje</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_comederos">Comederos y Bebederos</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_complementos">Complementos y Suplementos</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_rascadores">Rascadores y Estaciones de Juego</a></li>       
+                        <li><a class="fuente_menu" href="productos.html#listado_maltas">Maltas y Hierbas</a></li>
+                        <li><a class="fuente_menu" href="productos.html#listado_estimulantes">Estimulantes</a></li>
+                    </ul>
+                </li>
+                <li><a class="fuente_menu" href="servicios.html">Servicios <span class="desplegable">▼</span></a>
+                    <ul class="submenu azul_degradado_invertido">
+                        <li><a class="fuente_menu" href="servicios.html#educacion">Educacion</a></li>
+                        <li><a class="fuente_menu" href="servicios.html#adopcion">Adopcion</a></li>
+                        <li><a class="fuente_menu" href="servicios.html#catsitter">Catsitter</a></li>
+                    </ul>
+                </li>
+                <li><a class="fuente_menu" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="productos" class="cuerpo_pagina contenedor_principal">
+            <article id="listado_alimentos" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">ALIMENTOS BALANCEADOS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/kitten.png">
+                    <h4 class="producto__titulo">KITTEN</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Kitten 36 1.5kg</p>
+                    <p class="producto__precio">$2.750</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/pelo-largo.png">
+                    <h4 class="producto__titulo">INDOOR LONG HAIR</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Long Hair 1.5kg</p>
+                    <p class="producto__precio">$2.420</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/indoor.png">
+                    <h4 class="producto__titulo">INDOOR 7+</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Indoor 7+ 1.5kg</p>
+                    <p class="producto__precio">$2.420</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/weigth-care.png">
+                    <h4 class="producto__titulo">WEIGTH CARE</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Weigth Care 1.5kg</p>
+                    <p class="producto__precio">$2.700</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/hair-ball.png">
+                    <h4 class="producto__titulo">HAIR BALL</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Hair Ball 1.5kg</p>
+                    <p class="producto__precio">$2.800</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/active.png">
+                    <h4 class="producto__titulo">ACTIVE 7+</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Active 7+ 1.5kg</p>
+                    <p class="producto__precio">$2.900</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>          
+            </article>
+
+            <article id="listado_peluqueria" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">PELUQUERIA E HIGIENE</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/pauldip.webp">
+                    <h4 class="producto__titulo">PAULDIP</h4>
+                    <p class="producto__descripcion">Shampoo Espuma Seca</p>
+                    <p class="producto__precio">$999</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/osspret.webp">
+                    <h4 class="producto__titulo">OSPRET</h4>
+                    <p class="producto__descripcion">Shampoo Algas y Enjuague Abrillantador</p>
+                    <p class="producto__precio">$1.170</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/groomers.webp">
+                    <h4 class="producto__titulo">OSSPRET GROOMER</h4>
+                    <p class="producto__descripcion">Shampoo Groomers Expert</p>
+                    <p class="producto__precio">$550</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/osspret_cachorro.webp">
+                    <h4 class="producto__titulo">OSSPRET CACHORROS</h4>
+                    <p class="producto__descripcion">Shampoo Para Cachorros</p>
+                    <p class="producto__precio">$550</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/demapet.webp">
+                    <h4 class="producto__titulo">DERMAPET</h4>
+                    <p class="producto__descripcion">Acondicionador Enjuague Perros Gatos</p>
+                    <p class="producto__precio">$4.629</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>  
+                <div class="producto">
+                    <img class="producto__imagen" src="images/furminator.webp">
+                    <h4 class="producto__titulo">FURMINATOR</h4>
+                    <p class="producto__descripcion">Cepillo Pelo Corto</p>
+                    <p class="producto__precio">$5.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/funamei.webp">
+                    <h4 class="producto__titulo">FUNAMEI</h4>
+                    <p class="producto__descripcion">Cepillo Pelo Largo</p>
+                    <p class="producto__precio">$5.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/maguera.webp">
+                    <h4 class="producto__titulo">MANGUERA DUCHA</h4>
+                    <p class="producto__descripcion">Manguera Para Adaptar a Ducha</p>
+                    <p class="producto__precio">$1.999</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>       
+            </article>
+            
+            <article id="listado_piedritas" class="serpacion_articulos">
+                <h2 class="listado__titulo cambio_fondo">PIEDRITAS SANITARIAS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/silica_gel.jpg">
+                    <h4 class="producto__titulo">SILICA GEL</h4>
+                    <p class="producto__descripcion">Silica Cancat Neutra 3.8Lts</p>
+                    <p class="producto__precio">$1.400</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/absorsol.jpg">
+                    <h4 class="producto__titulo">ABSORSOL</h4>
+                    <p class="producto__descripcion">Absorsol Premium 3.6kg</p>
+                    <p class="producto__precio">$350</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/stonecat.jpg">
+                    <h4 class="producto__titulo">STONECAT</h4>
+                    <p class="producto__descripcion">StoneCat Aglomerantes 8Kg</p>
+                    <p class="producto__precio">$900</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/poopypet.jpg">
+                    <h4 class="producto__titulo">POOPY PET</h4>
+                    <p class="producto__descripcion">POOPY PET 5kg</p>
+                    <p class="producto__precio">$400</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/discovery.jpg">
+                    <h4 class="producto__titulo">DISCOVERY</h4>
+                    <p class="producto__descripcion">Discovery Silica 3.8Lts</p>
+                    <p class="producto__precio">$1.120</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/city_cat.jpg">
+                    <h4 class="producto__titulo">CITY CAT </h4>
+                    <p class="producto__descripcion">City Cat Aglomerantes 4Kg</p>
+                    <p class="producto__precio">$550</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/nelsoni.jpg">
+                    <h4 class="producto__titulo">NELSONI</h4>
+                    <p class="producto__descripcion">Nelsoni Ranch 2Kg</p>
+                    <p class="producto__precio">$223</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>        
+            </article>
+
+            <article id="listado_juguetes" class="serpacion_articulos">
+                <h2 class="listado__titulo cambio_fondo">JUGUETES</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/tumbler.jpg">
+                    <h4 class="producto__titulo">TUMBLER RATON</h4>
+                    <p class="producto__descripcion">Juguete Interactivo Para Gato</p>
+                    <p class="producto__precio">$344</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/pelota_jaula.jpg">
+                    <h4 class="producto__titulo">PELOTA JAULA</h4>
+                    <p class="producto__descripcion">Raton En Jaula</p>
+                    <p class="producto__precio">$485</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/raton_cuerda.jpg">
+                    <h4 class="producto__titulo">RATON A CUERDA</h4>
+                    <p class="producto__descripcion">Raton Interactivo A Cuerda</p>
+                    <p class="producto__precio">$603</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/varita.jpg">
+                    <h4 class="producto__titulo">Varita Cascabel</h4>
+                    <p class="producto__descripcion">Raton En Caña Extensible</p>
+                    <p class="producto__precio">$287</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/ratita_cuerda.jpg">
+                    <h4 class="producto__titulo">RATA A CUERDA</h4>
+                    <p class="producto__descripcion">Rata a Cuerda Muy Divertido</p>
+                    <p class="producto__precio">$722</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/rata_gome.jpg">
+                    <h4 class="producto__titulo">RATA DE GOMA</h4>
+                    <p class="producto__descripcion">Rata De Goma Con Sonido x4</p>
+                    <p class="producto__precio">$299</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/torre_pelotas.jpg">
+                    <h4 class="producto__titulo">TORRE PELOTAS</h4>
+                    <p class="producto__descripcion">Torre Con Pelotas Interactiva 3 Niveles</p>
+                    <p class="producto__precio">$1.830</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/puntero.jpg">
+                    <h4 class="producto__titulo">PUNTERO listado_rascadores</h4>
+                    <p class="producto__descripcion">Puntero Laser Verde</p>
+                    <p class="producto__precio">$899</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/surtido.jpg">
+                    <h4 class="producto__titulo">SURTIDO</h4>
+                    <p class="producto__descripcion">Kit Surtido Juguetes Varios</p>
+                    <p class="producto__precio">$467</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>         
+            </article>
+
+            <article id="listado_snacks" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">SNACKS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/snack1.webp">
+                    <h4 class="producto__titulo">INSTINCTIVE</h4>
+                    <p class="producto__descripcion">Snack Instive</p>
+                    <p class="producto__precio">$299</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/snack2.webp">
+                    <h4 class="producto__titulo">BEAUTY</h4>
+                    <p class="producto__descripcion">Snack Beauty</p>
+                    <p class="producto__precio">$299</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/ageing-12.png">
+                    <h4 class="producto__titulo">AGEING 12</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Ageing 12+ 1.5kg</p>
+                    <p class="producto__precio">$2.300</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/sensory-taste.png">
+                    <h4 class="producto__titulo">SENSORY TASTE</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin Sensory Taste 1.5kg</p>
+                    <p class="producto__precio">$2.500</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/persian.png">
+                    <h4 class="producto__titulo">PERSIAN</h4>
+                    <p class="producto__descripcion">Alimento Royal Canin PERSIAN 1.5kg</p>
+                    <p class="producto__precio">$3.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>       
+            </article>
+
+            <article id="listado_antiparasitarios" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">ANTIPARASITARIOS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/anti1.jpg">
+                    <h4 class="producto__titulo">SHOO!TAG</h4>
+                    <p class="producto__descripcion">Antiparasitario para garrapatas</p>
+                    <p class="producto__precio">$2.700</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/anti2.jpg">
+                    <h4 class="producto__titulo">SHOO!TAG</h4>
+                    <p class="producto__descripcion">Antiparasitario para pulgas</p>
+                    <p class="producto__precio">$2.700</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/anti3.jpg">
+                    <h4 class="producto__titulo">SHOO!TAG</h4>
+                    <p class="producto__descripcion">Antiparasitario para pulgas y garrapatas</p>
+                    <p class="producto__precio">$4.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>        
+            </article>
+
+            <article id="listado_transporte" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">TRANSPORTE Y VIAJE</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/transporte1.jpeg">
+                    <h4 class="producto__titulo">DOGGIT</h4>
+                    <p class="producto__descripcion">Transporte Explorer</p>
+                    <p class="producto__precio">$5.400</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/transporte2.jpeg">
+                    <h4 class="producto__titulo">DOGGIT</h4>
+                    <p class="producto__descripcion">Transporte Bolso</p>
+                    <p class="producto__precio">$4.700</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/transporte3.jpeg">
+                    <h4 class="producto__titulo">ARQUIVET</h4>
+                    <p class="producto__descripcion">Bolso Viaje Plegable</p>
+                    <p class="producto__precio">$4.900</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>        
+            </article>
+
+            <article id="listado_comederos" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">COMEDEROS Y BEBEDEROS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/comedero1.jpeg">
+                    <h4 class="producto__titulo">NAYECO</h4>
+                    <p class="producto__descripcion">Comedero Inoxidable</p>
+                    <p class="producto__precio">$500</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/comedero2.jpeg">
+                    <h4 class="producto__titulo">BALTIC</h4>
+                    <p class="producto__descripcion">Comedero Inoxidable</p>
+                    <p class="producto__precio">$700</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/comedero3.jpeg">
+                    <h4 class="producto__titulo">GAUN</h4>
+                    <p class="producto__descripcion">Comedero Inoxidable</p>
+                    <p class="producto__precio">$300</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/bebedero.jpeg">
+                    <h4 class="producto__titulo">CALIF</h4>
+                    <p class="producto__descripcion">Fuente de Agua con Filtro</p>
+                    <p class="producto__precio">$7.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>        
+            </article>
+
+            <article id="listado_complementos" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">COMPLEMENTOS Y SUPLEMENTOS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/inmune.jpg">
+                    <h4 class="producto__titulo">BIOBERICA</h4>
+                    <p class="producto__descripcion">Impromune Para Reforzar Sistema Inmunitario</p>
+                    <p class="producto__precio">$3.500</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>       
+            </article>
+
+            <article id="listado_rascadores">
+                <h2 class="listado__titulo cambio_fondo">RASCADORES Y ESTACIONES DE JUEGO</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/tomaso.jpg">
+                    <h4 class="producto__titulo">TOMASO</h4>
+                    <p class="producto__descripcion">Rascador Gato Tomaso</p>
+                    <p class="producto__precio">$4.582</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/infinito.jpg">
+                    <h4 class="producto__titulo">INFINITO</h4>
+                    <p class="producto__descripcion">Rascador Afila Uñas Infinito</p>
+                    <p class="producto__precio">$2.300</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/1piso.jpg">
+                    <h4 class="producto__titulo">1 PISO</h4>
+                    <p class="producto__descripcion">Rascador De 1 Piso</p>
+                    <p class="producto__precio">$1.599</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/tunel.jpg">
+                    <h4 class="producto__titulo">TUNEL</h4>
+                    <p class="producto__descripcion">Tunel 4 Entradas</p>
+                    <p class="producto__precio">$4.020</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/esquinero.jpg">
+                    <h4 class="producto__titulo">ESQUINERO</h4>
+                    <p class="producto__descripcion">Esquinero Pared Con Cepillo</p>
+                    <p class="producto__precio">$550</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div> 
+                <div class="producto">
+                    <img class="producto__imagen" src="images/post.jpg">
+                    <h4 class="producto__titulo">POSTE</h4>
+                    <p class="producto__descripcion">Poste Zootec</p>
+                    <p class="producto__precio">$2.365</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/trepador.jpg">
+                    <h4 class="producto__titulo">ESQUINERO TREPADOR</h4>
+                    <p class="producto__descripcion">Esquinero Trepador Pared</p>
+                    <p class="producto__precio">$1.600</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/torre.jpg">
+                    <h4 class="producto__titulo">TORRE</h4>
+                    <p class="producto__descripcion">Torre 3 Pisos</p>
+                    <p class="producto__precio">$25.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>        
+            </article>
+            
+            <article id="listado_hierbas" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">MALTAS Y HIERBAS</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/catnip.webp">
+                    <h4 class="producto__titulo">ZOOTEC</h4>
+                    <p class="producto__descripcion">Catnip Hierba Gatera Deshidratada</p>
+                    <p class="producto__precio">$1.490</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/hierba.jpg">
+                    <h4 class="producto__titulo">TRIXIE</h4>
+                    <p class="producto__descripcion">Hierba Para Gatos</p>
+                    <p class="producto__precio">$1.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>       
+            </article>
+
+            <article id="listado_estimulantes" class="serpacion_articulos"> 
+                <h2 class="listado__titulo cambio_fondo">ESTIMULANTES</h2>
+                <div class="producto">
+                    <img class="producto__imagen" src="images/calmante.jpeg">
+                    <h4 class="producto__titulo">BEAPHAR</h4>
+                    <p class="producto__descripcion">CaLmante Antiestress</p>
+                    <p class="producto__precio">$1.000</p>
+                    <button class="producto__boton">COMPRAR</button>
+                </div>     
+            </article>
+
+        </section>
+        
+        <div class="chat_whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=1122334455&text&app_absent=0"><img class="icono" src="images/whatsapp.png"></a>
+        </div>
+
+        <div class="hacia_arriba">
+            <a href="#"><img class="icono" src="images/flecha.png"></a>
+        </div>
+
+        <footer id="pie" class="azul_degradado">
+            <div class="redes_sociales">
+                <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width=25px height=25px></a>
+                <a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" width=25px height=25px></a>
+            </div>
+            <div class="datos_contacto fuente_menu">
+                <p>Telefono: 011 4567-7890 / Local: Pio Diaz 650, Saenz Peña, Buenos Aires</p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
