@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#maquetadoUnContenido{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "infoEntregas" 
+    "header"
+    "barraNavegadora"
+    "contenido_pagina"
+    "pie";
+}
+
+#maquetadoDosContenidos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "infoEntregas infoEntregas"
+    "header header"
+    "barraNavegadora barraNavegadora"
+    "contenidoIzquierdo contenidoDerecho"
+    "pie pie";
+}
+
+.cuerpo_pagina{
+    background: $blancoGris;
+    background: $gradienteBlancoGris;
+    padding-bottom: 10px;
+}
+
+.chat_whatsapp{
+    position: fixed;
+    right: 5px;
+    bottom: 30px;
+}
+
+.icono{
+    width: $iconoCuadrado;
+    height: $iconoCuadrado;
+}
+
+.sin_subrayado{
+    text-decoration: none;
+    color:$negro;
+}
+
+.sin_bordes{
+    border: none;
+}
+
+.fuente_azul{
+    color: $azulOscuro;
+}
+
+.centrado{
+    text-align: center;
+}

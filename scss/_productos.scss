@@ -1,0 +1,67 @@
+.serpacion_articulos{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.listado__titulo{
+    border-top: $bordeGrueso;   
+    border-left: $bordeGrueso; 
+    border-right: $bordeFino; 
+    border-bottom: $bordeFino;
+    border-radius: $bordeRedondo;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    text-align: center;
+    background: $azulEspecial;
+    background: $gradienteAzulEspecial;
+    color: $blanco;
+}
+
+.producto{
+    background-color: $blanco;
+    width: 300px;
+    border-top: $bordeGrueso;   
+    border-left: $bordeGrueso; 
+    border-right: $bordeFino; 
+    border-bottom: $bordeFino;
+    border-radius: $bordeRedondo;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    transition: $transicionRapida;
+    &:hover{
+        transform: $aumentar5per;
+    }
+}
+
+.producto__imagen{
+    width: 200px;
+    height: 300px;
+    padding-left: 50px;
+}
+
+.producto__precio{
+    font-size: 30px;
+}
+
+.producto__boton{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: $verdeAgua;
+    color: $blanco;
+    margin-left: 100px;
+    &:hover{
+        background-color: $azulOscuro;
+        color: $blanco;
+    }
+}
+
+.hacia_arriba{
+    position: fixed;
+    left: 5px;
+    bottom: 30px;
+}

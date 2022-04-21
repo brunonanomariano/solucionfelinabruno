@@ -1,0 +1,20 @@
+.contenidoImagen{
+    grid-area: contenidoIzquierdo;
+    display: grid;
+    align-items: flex-end;
+    /* animation: fadeIn;
+    animation-duration: $tiempoModerado; */
+}
+
+.gris_degradado{
+    background: $gris;
+    background: $grisDegradado;
+}
+
+.contenidoParrafo{
+    grid-area: contenidoDerecho;
+    padding: 10px;
+    border-left: $separadorContenido;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,61 @@
+#promo{
+    display: flex;
+}
+
+#contenedorTitulo{
+    margin-top: $margenTituloHome;
+    margin-bottom:$margenTituloHome;
+    h2{
+        font-size: 40px;
+        font-family: $fuenteTituloCategoria;
+    }
+}
+
+.espaciadoHome{
+    padding-left: $paddingHome;
+    padding-right: $paddingHome;
+}
+
+#contenedorCategorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: $espacioCategoria;
+    grid-row-gap: $espacioCategoria;
+    margin-bottom: $espacioCategoria;
+    animation-name: aparecer;
+    animation-duration: $tiempoMedio;
+}
+
+.categoria{
+    background-color: $blanco;
+    display: flex;
+    flex-direction: row;
+    border: $bordeAzulClaro;
+    border-radius: $bordeRedondeado;
+    transition: $transicionRapida;
+    &:hover{
+        transform: $aumentar5per;
+    }
+    h3{
+        padding: $soloEjeHorizontal;
+        align-self: center;
+    }
+}
+
+.tamanio_imagen{
+    padding: $soloEjeHorizontal;
+    width: $tamanioImagenCuadrada;
+    height: $tamanioImagenCuadrada;
+}
+
+@media screen and (max-width:780px) {
+    #contenedorCategorias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto; 
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+}

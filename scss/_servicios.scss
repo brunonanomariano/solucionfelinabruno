@@ -1,0 +1,47 @@
+.contenido_servicio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+.servicio__descripcion{
+    font-family: $fuenteServicios;
+    color: $negro;
+    font-size: 35px;
+    text-align: center;
+    margin: $margenDerecho5;
+    padding-top: 50px;
+    border-top: $bordeGrueso; 
+    border-left: $bordeGrueso; 
+    border-right: $bordeFino; 
+    border-bottom: $bordeFino; 
+    border-radius: $bordeRedondo;
+    width: auto;
+    transition: font-size 2s;
+    &:hover{
+        color: $blanco;
+        background: $azulEspecial;
+        background: $gradienteAzulEspecial;
+    }
+}
+
+.servicio__titulo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: $bordeGrueso;
+    border-radius: $bordeRedondo;
+    background: $azulEspecial;
+    background: $gradienteAzulEspecial;
+    text-align: center;
+    font-size: 30px;
+    color: $blanco;
+}
+
+.servicio__imagen{
+    border: $bordeGrueso;
+    border-radius: $bordeRedondo;
+    display: inline-block;
+    width: 500px;
+    margin-left: 0px;
+}

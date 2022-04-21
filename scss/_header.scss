@@ -1,0 +1,115 @@
+#infoEntrega{
+    display: flex;
+    background-color: $azulOscuro;
+    color: $blanco;
+    font-weight: bolder;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    overflow:hidden;
+    grid-area: infoEntregas;
+    p{
+        animation: slideInDown;
+        animation-duration: $tiempoAlto;
+        animation-iteration-count: infinite;
+        animation-delay: $tiempoModerado;
+    }
+}
+
+#header{
+    height: 100px;  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-area: header;
+}
+
+#logoHeader{
+    width: 174px;
+    display: flex;
+    flex-direction: row;
+}
+
+#tituloHeader{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1{
+        font-size: 40px;
+        color: $blanco;
+        font-family: $fuenteLogo;
+    }
+}
+
+.animacion_bienvenida_titulo{
+    animation:backInRight;
+    animation-duration: $tiempoMedioBajo;
+}
+
+.animacion_bienvenida_logo{
+    animation:backInLeft;
+    animation-duration: $tiempoMedioBajo;
+}
+
+#barraNavegadora{
+    border-top: $bordeBarraNavegadora;
+    font-weight: bolder;
+    grid-area: barraNavegadora;
+}
+
+.fuente_menu{
+    text-decoration: none; 
+    color: $blanco;
+ }
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .item:hover{
+        /* animation: pulse; */
+        /* animation-duration: $tiempoBajo; */
+        .submenu{
+            display:block;
+            .item:hover{
+                background-color: $azulOscuro;
+                z-index: 10;
+            }
+        }
+    }
+ }
+
+ .item {
+    text-align: left;
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    font-size: 20px;
+ }
+
+ .submenu {
+    position: absolute;
+    display: none;
+    border-left: $bordeBarraNavegadora;
+    .item{
+        width: 100%;    
+        display: block;
+    }
+ }
+
+ .desplegable{
+    font-size: 14px;
+}
+
+.azul_degradado{
+    background: $azulEspecial;
+    background: $gradienteAzulEspecial;
+}
+
+.azul_degradado_invertido{
+    background: $azulEspecialInvertido;
+    background: $gradienteAzulEspecialInvertido;
+}

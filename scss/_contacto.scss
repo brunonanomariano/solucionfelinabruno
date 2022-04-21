@@ -1,0 +1,67 @@
+#infoContacto{
+    padding: 20px 40px;;
+    animation: aparecer;
+    animation-duration: $tiempoMedio;
+}
+
+.tituloContacto{
+    font-size: 40px;
+}
+
+.interlineado{
+    margin-bottom: 50px;
+}
+
+#inputContacto{
+    display: flex;
+    justify-content: flex-start;
+    animation:aparecer;
+    animation-duration: $tiempoMedio;
+}
+
+#formulario_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+#formulario_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.etiqueta{
+    font-size: 25px;
+    text-align: center;
+}
+
+.datos{
+    width: 312px;
+    height: 15px;
+}
+
+.enviar{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    transition: $transicionMedia;
+    &:hover{
+        background-color: $azulOscuro;
+        color: $blanco;
+    }
+    &:focus{
+        background-color: $azulOscuro;
+        color: $blanco;
+    }
+} 
+
+.borde_contacto{
+    border: $bordeAzulClaro;
+    border-radius: $bordeRedondeado;
+}
+
+
