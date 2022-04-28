@@ -1,0 +1,126 @@
+@media screen and (max-width:671px) {
+    
+    #maquetadoDosContenidos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+        "infoEntregas" 
+        "header"
+        "barraNavegadora"
+        "contenidoIzquierdo"
+        "contenidoDerecho"
+        "pie";
+    }
+
+    #contenedorCategorias{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto; 
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    
+    .titulo_encabezado{
+        font-size: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+     }
+    
+     .item {
+        text-align: center;
+        display: block;
+        width: 100%;
+     }
+    
+     .submenu {
+        position: relative;
+     }
+
+    .introduccion{
+        font-size: 60px;
+    }
+    
+    .video_tamanio{
+        width: 100%
+    }
+    
+    #pie{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    
+    .contenido_servicio{
+        flex-direction: column-reverse;
+    }
+    
+    .servicio__imagen{
+        width: 300px;
+        margin-left: 0px;
+    }
+    
+    .producto{
+        @include dimension(200px, 150px);
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .producto__imagen{
+        @include dimension(100px, 100px);
+        padding-left: 25px;
+    }
+
+    .producto__boton{
+        @include dimension(20px, 60px);
+        margin-left: 50px;
+        font-size: 10px;
+    }
+
+    .producto__precio{
+        font-size: 15px;
+    }
+
+    .listado__titulo{
+        font-size: 15px;
+    }
+
+    .servicio__descripcion{
+        font-size: 18px;
+    }
+
+    #header{
+        height: 100%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0px;
+        grid-area: header;
+    }
+
+    #logoHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tituloHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tamanio_logo{
+        @include dimension(100px,174px);
+    }
+
+    .contenidoParrafo{
+        border-top: 5px double black;
+        border-left: 0px;
+    }
+
+}

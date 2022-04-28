@@ -1,0 +1,105 @@
+#infoEntrega{
+    display: flex;
+    background-color: map-get($colores , azulOscuro);
+    color: map-get($colores , blanco);
+    font-weight: bolder;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    overflow:hidden;
+    grid-area: infoEntregas;
+    p{
+        @include animacion(slideInDown, map-get($duraciones, tiempoAlto), infinite, map-get($duraciones, tiempoModerado) )
+    }
+}
+
+#header{
+    @include dimension(100px,100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-area: header;
+}
+
+#logoHeader{
+    width: 174px;
+    display: flex;
+    flex-direction: row;
+}
+
+#tituloHeader{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1{
+        font-size: 40px;
+        color: map-get($colores , blanco);
+        font-family: map-get($fuentes, fuenteLogo);
+    }
+}
+
+.animacion_bienvenida_titulo{
+    @include animacion(backInRight, map-get($duraciones, tiempoMedioBajo), false, false )
+}
+
+.animacion_bienvenida_logo{
+    @include animacion(backInLeft, map-get($duraciones, tiempoMedio),false,false);
+}
+
+#barraNavegadora{
+    border-top: map-get($bordes, bordeBarraNavegadora);
+    font-weight: bolder;
+    grid-area: barraNavegadora;
+}
+
+.fuente_menu{
+    text-decoration: none; 
+    color: map-get($colores , blanco);
+ }
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .item:hover .submenu{
+            display:block;
+            .item:hover{
+                background-color: map-get($colores , azulOscuro);
+                z-index: 10;
+            }
+    }
+ }
+
+ .item {
+    text-align: left;
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    font-size: 20px;
+ }
+
+ .submenu {
+    position: absolute;
+    display: none;
+    border-left: map-get($bordes, bordeBarraNavegadora);
+    .item{
+        width: 100%;    
+        display: block;
+    }
+ }
+
+ .desplegable{
+    font-size: 14px;
+}
+
+.azul_degradado{
+    background: map-get($colores , azulEspecial);
+    background: map-get($gradientes, gradienteAzulEspecial);
+}
+
+.azul_degradado_invertido{
+    background: map-get($colores, azulEspecialInvertido);
+    background: map-get($gradientes, gradienteAzulEspecialInvertido);
+}

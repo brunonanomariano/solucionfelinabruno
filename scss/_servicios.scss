@@ -1,0 +1,45 @@
+.contenido_servicio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+.servicio__descripcion{
+    font-family: map-get($fuentes, fuenteServicios);
+    color: map-get($colores, negro);
+    font-size: 35px;
+    text-align: center;
+    margin: $margenDerecho5;
+    padding-top: 50px;
+    border-top: map-get($bordes, bordeGrueso); 
+    border-left: map-get($bordes, bordeGrueso); 
+    border-right: map-get($bordes, bordeFino); 
+    border-bottom: map-get($bordes, bordeFino); 
+    border-radius: map-get($bordes, bordeRedondo);
+    width: auto;
+    transition: font-size 2s;
+    &:hover{
+        color: map-get($colores, blanco) ;
+        @include fondoDegradado( map-get($colores, azulEspecial) ,map-get($gradientes, gradienteAzulEspecial) );
+    }
+}
+
+.servicio__titulo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: map-get($bordes, bordeGrueso);
+    border-radius: map-get($bordes, bordeRedondo);
+    @include fondoDegradado( map-get($colores, azulEspecial), map-get($gradientes, gradienteAzulEspecial) );
+    text-align: center;
+    font-size: 30px;
+    color: map-get($colores, blanco);
+}
+
+.servicio__imagen{
+    border: map-get($bordes, bordeGrueso);
+    border-radius: map-get($bordes, bordeRedondo);
+    display: inline-block;
+    width: 500px;
+    margin-left: 0px;
+}

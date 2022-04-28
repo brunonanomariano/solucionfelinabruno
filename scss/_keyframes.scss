@@ -1,0 +1,17 @@
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }   
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes cambioFondo {
+    from{
+    }   
+    to{
+        color: map-get($colores , blanco);
+        @include fondoDegradado( map-get($colores , azulEspecial) , map-get($gradientes, gradienteAzulEspecial) );
+    }
+}

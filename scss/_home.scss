@@ -1,0 +1,59 @@
+#promo{
+    display: flex;
+}
+
+#contenedorTitulo{
+    margin-top: $margenTituloHome;
+    margin-bottom:$margenTituloHome;
+    h2{
+        font-size: 40px;
+        font-family: map-get($fuentes, fuenteTituloCategoria);
+    }
+}
+
+.espaciadoHome{
+    padding-left: $paddingHome;
+    padding-right: $paddingHome;
+}
+
+#contenedorCategorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: $espacioCategoria;
+    grid-row-gap: $espacioCategoria;
+    margin-bottom: $espacioCategoria;
+    @include animacion(aparecer, map-get($duraciones, tiempoMedio),false,false);
+}
+
+.categoria{
+    background-color: map-get($colores , blanco);
+    display: flex;
+    flex-direction: row;
+    border: map-get($bordes, bordeAzulClaro);
+    border-radius: map-get($bordes, bordeRedondeado);
+    transition: map-get($transiciones, transicionRapida);
+    &:hover{
+        transform: $aumentar5per;
+    }
+    h3{
+        padding: $soloEjeHorizontal;
+        align-self: center;
+    }
+}
+
+.tamanio_imagen{
+    padding: $soloEjeHorizontal;
+    @include dimension($tamanioImagenCuadrada, $tamanioImagenCuadrada);
+}
+
+@media screen and (max-width:780px) {
+    #contenedorCategorias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto; 
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+}

@@ -1,0 +1,57 @@
+$iconoCuadrado: 50px;
+$margenTituloHome: 25px;
+$paddingHome: 50px;
+$aumentar5per: scale(1.05,1.05); 
+$tamanioImagenCuadrada:75px;
+$espacioCategoria:30px;
+$soloEjeHorizontal: 0px 5px;
+$margenDerecho5: 0px 5px 0px 0px;
+
+$fuentes: (
+    fuenteLogo: ('Hurricane', cursive),
+    fuenteTituloCategoria: ('Anek Telugu', sans-serif),
+    fuenteServicios: ('Roboto', sans-serif bold),   
+);
+
+$colores: (
+    azulOscuro: #0f5474,
+    verdeAgua: #52c76b,
+    blanco: white,
+    negro: black,
+    azulEspecial: rgb(36,219,255),
+    azulEspecialInvertido: rgb(48,140,159),
+    blancoGris: rgb(255,255,255),
+    gris:rgb(160,164,175)
+);
+
+$gradientes: (
+    gradienteAzulEspecial: linear-gradient(90deg, rgba(36,219,255,1) 14%, rgba(44,168,193,1) 29%, rgba(48,140,158,1) 44%, rgba(44,168,193,1) 56%, rgba(44,168,193,1) 70%, rgba(48,140,158,1) 85%),
+    gradienteAzulEspecialInvertido: linear-gradient(270deg, rgba(48,140,159,1) 22%, rgba(47,145,164,1) 43%, rgba(46,150,170,1) 62%),
+    gradienteBlancoGris: linear-gradient(270deg, rgba(255,255,255,1) 9%, rgba(250,247,247,1) 24%, rgba(245,242,242,1) 36%, rgba(255,255,255,1) 47%, rgba(250,247,247,1) 59%, rgba(245,242,242,1) 68%, rgba(255,255,255,1) 76%, rgba(250,247,247,1) 84%, rgba(245,242,242,1) 93%),
+    grisDegradado: linear-gradient(69deg, rgba(160,164,175,1) 22%, rgba(159,163,174,1) 38%, rgba(154,158,168,1) 49%, rgba(148,152,163,1) 62%, rgba(143,147,158,1) 75%, rgba(141,145,156,1) 85%)
+);
+
+$duraciones: (
+    tiempoAlto: 5s,
+    tiempoModerado: 4s,
+    tiempoMedio: 3s,
+    tiempoMedioBajo: 2s,
+    tiempoBajo: 1s,
+    sinAnimacion: 0s,
+);
+
+$transiciones: (
+    transicionRapida: all 1s,
+    transicionMedia: all 2s
+);
+
+$bordes: (
+    bordeAzulClaro: 2px solid lightblue,
+    bordeGrueso: 5px solid lightblue,
+    bordeFino: 2px solid lightblue,
+    bordeBarraNavegadora: 2px solid white, 
+    separadorContenido: 5px double black,
+    bordeRedondeado: 5px,
+    bordeRedondo: 10px,
+    sinBordes: none,
+);

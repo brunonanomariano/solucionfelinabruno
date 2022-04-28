@@ -1,0 +1,17 @@
+.contenidoImagen{
+    grid-area: contenidoIzquierdo;
+    display: grid;
+    align-items: flex-end;
+}
+
+.gris_degradado{
+    @include fondoDegradado( map-get($colores, gris) , map-get($gradientes, grisDegradado) );
+}
+
+.contenidoParrafo{
+    grid-area: contenidoDerecho;
+    padding: 10px;
+    border-left: map-get($bordes , separadorContenido);
+    font-size: 20px;
+    font-weight: 500;
+}

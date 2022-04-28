@@ -1,0 +1,25 @@
+@mixin boton_color($fondo, $letra){
+    background-color: $fondo;
+    color: $letra;
+}
+
+@mixin dimension($alto, $ancho){
+    height: $alto;
+    width: $ancho; 
+}
+
+@mixin animacion($tipo, $duracion, $iteracion, $delay){
+    animation: $tipo;
+    animation-duration: $duracion;
+    @if ($iteracion){
+        animation-iteration-count: $iteracion;
+    }
+    @if ($iteracion){
+    animation-delay: $delay;
+    }
+}
+
+@mixin fondoDegradado($color, $gradiente){
+    background: $color;
+    background: $gradiente;
+}
