@@ -54,6 +54,7 @@
     
     .contenido_servicio{
         flex-direction: column-reverse;
+        align-items: center;
     }
     
     .servicio__imagen{
@@ -61,7 +62,7 @@
         margin-left: 0px;
     }
     
-    .producto{
+    /* .producto{
         @include dimension(200px, 150px);
         p{
             font-size: 10px;
@@ -81,7 +82,7 @@
 
     .producto__precio{
         font-size: 15px;
-    }
+    } */
 
     .listado__titulo{
         font-size: 15px;
@@ -121,6 +122,14 @@
     .contenidoParrafo{
         border-top: 5px double black;
         border-left: 0px;
+    }
+
+    .desplegable{
+        display: none;
+    }
+
+    .menu .item:hover .submenu{
+        display: none;
     }
 
 }
